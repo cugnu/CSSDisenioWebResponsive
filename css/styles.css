@@ -4,27 +4,31 @@ body {
 }
 
 #contenido {
+  display: flex;
 	width: 900px;
 	margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-header section {
+header {
   background-color:#5b7989;
   color: white;
 	border-radius: 10px 10px 0px 0px;
-	box-sizing: border-box;
 	float:left;
-	width: 100%;
-  height: 4em;
+  width: 100%;
+  box-sizing: border-box;
+
 }
 
 #titulo {
   float:left;
-  width: 50%;
+  width: 49%;
   text-align: left;
   text-shadow: 2px 2px #02010a;
-  font-size: 32px;
-  padding-top: 0.3em;
+  font-size: 30px;
+  padding-left: 1%;
  }
 
 #menu {
@@ -32,13 +36,9 @@ header section {
   width: 48%;
   text-align: right;
   font-size: 22px;
-  padding-top: 0.75em;
   word-spacing: 25px;
   padding-right: 2%;
-}
-
-a {
-  word-spacing: 10px;
+  padding-top: 0.6em;
 }
 
 a:visited{
@@ -49,11 +49,60 @@ a.actual {
   text-decoration: none;
 }
 
+#imagenCentral {
+width: 100%;
+background-color: #82c3a6;
+display: block;
+text-align: center;
+}
 
- @media (max-width: 900px){
- #contenido
- {
- 	width: 100%;
- 	margin: 0 auto;
- }
+.imagenSecundaria {
+width: 50%;
+background-color:  #d5c75f;
+display: block;
+text-align: center;
+
+}
+#paisaje, #retrato{
+  transition-property: all;
+  transition-duration: 1s;
+  box-shadow: 2px 2px #82c3a6;
+
+}
+#paisaje:hover {
+  transform:rotateZ(10deg);
+
+}
+
+#retrato:hover {
+transform: translate(20px,-5px);
+}
+
+img {
+  height: 90%;
+  width: 90%;
+  margin-top: 3%;
+}
+figcaption{
+  font-size: 22px;
+}
+@media (max-width: 900px) {
+  #contenido {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .imagenSecundaria {
+    width: 100%;
+  }
+
+  #titulo {
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu {
+    width: 100%;
+    text-align: center;
+  }
 }
