@@ -41,7 +41,7 @@ header {
   padding-top: 0.6em;
 }
 
-a:visited{
+a, a:visited{
  color:inherit;
 }
 
@@ -67,25 +67,64 @@ text-align: center;
   transition-property: all;
   transition-duration: 1s;
   box-shadow: 2px 2px #82c3a6;
-
 }
+
 #paisaje:hover {
   transform:rotateZ(10deg);
-
 }
 
 #retrato:hover {
 transform: translate(20px,-5px);
 }
 
-img {
+figure img {
   height: 90%;
   width: 90%;
-  margin-top: 3%;
+  margin-top: 1%;
 }
+
 figcaption{
   font-size: 22px;
 }
+
+footer{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  float: left;
+  padding-bottom: 2em;
+}
+
+.footer h1 {
+  margin-bottom:.2em;
+  margin-top: .7em;
+}
+
+.footer p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom:.4em;
+  margin-top: 0em;
+  text-decoration: none;
+}
+
+.footer img {
+  float: left;
+  width: 18px;
+  margin-right: 6px;
+}
+
+.footer{
+  float: left;
+  width:22%;
+  text-align: left;
+  margin-left: 3%;
+}
+
+.linkRedes {
+  text-decoration: none;
+}
+
 @media (max-width: 900px) {
   #contenido {
     width: 100%;
@@ -104,5 +143,8 @@ figcaption{
   #menu {
     width: 100%;
     text-align: center;
+  }
+  .footer{
+    width: 100%;
   }
 }
