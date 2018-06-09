@@ -73,7 +73,7 @@ text-align: center;
 
 }
 
-#imagenCentral {
+img {
   box-shadow: 2px 2px #02010a;
 }
 
@@ -88,7 +88,7 @@ text-align: center;
 #paisaje, #retrato{
   transition-property: all;
   transition-duration: 1s;
-  box-shadow: 2px 2px #02010a;
+
 }
 
 #paisaje:hover {
