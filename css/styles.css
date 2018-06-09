@@ -80,6 +80,7 @@ text-align: center;
 .imagenSecundaria {
 width: 50%;
 background-color:  #d5c75f;
+border: 1px;
 display: block;
 text-align: center;
 
@@ -148,6 +149,35 @@ footer{
   text-decoration: none;
 }
 
+.imagenesPaisajeRetrato{
+  width: 100%;
+  background-color:  #d5c75f;
+  display: block;
+  text-align: center;
+
+}
+
+
+.imagenesPaisajeRetrato img {
+  width: 27%;
+  margin: 2.5% 3%;
+}
+
+.imagenesPaisajeRetrato img:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.imagenesPaisajeRetrato img:nth-child(1){
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.imagenesPaisajeRetrato img:nth-child(3){
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
 @media (max-width: 900px) {
   #contenido {
     width: 100%;
@@ -169,5 +199,9 @@ footer{
   }
   .footer{
     width: 100%;
+  }
+
+  .imagenesPaisajeRetrato img {
+    width: 94%;
   }
 }
