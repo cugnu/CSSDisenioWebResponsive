@@ -10,6 +10,22 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+      margin-top: 0%;
+  }
 }
 
 header {
@@ -49,11 +65,16 @@ a.actual {
   text-decoration: none;
 }
 
-#imagenCentral {
+.imagenCentral {
 width: 100%;
 background-color: #82c3a6;
 display: block;
 text-align: center;
+
+}
+
+#imagenCentral {
+  box-shadow: 2px 2px #02010a;
 }
 
 .imagenSecundaria {
@@ -66,15 +87,17 @@ text-align: center;
 #paisaje, #retrato{
   transition-property: all;
   transition-duration: 1s;
-  box-shadow: 2px 2px #82c3a6;
+  box-shadow: 2px 2px #02010a;
 }
 
 #paisaje:hover {
   transform:rotateZ(10deg);
+  box-shadow: 2px 2px #82c3a6;
 }
 
 #retrato:hover {
 transform: translate(20px,-5px);
+box-shadow: 2px 2px #82c3a6;
 }
 
 figure img {
